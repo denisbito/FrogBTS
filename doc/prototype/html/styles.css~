@@ -1,0 +1,75 @@
+/*****************************************************************************
+ * GENERAL STYLES
+ *****************************************************************************/
+body {
+	font-family: "Bitstream Vera Sans", "DejaVu Sans", "Verdana", monospace;
+	font-size: small;
+	line-height: 160%;
+}
+
+/*****************************************************************************
+ * STRUCTURAL LAYOUT DIVS
+ *****************************************************************************/
+#rootDiv {
+}
+
+#headerBar {
+	background-color: #6E6E14;
+	color: #FFFFFF;
+}
+
+#topMenuDiv {
+	text-align: right;
+}
+
+#menuBar {
+}
+
+#footerBar {
+}
+
+/*****************************************************************************
+ * MAIN MENU ITEMS
+ *****************************************************************************/
+
+/*****************************************************************************
+ * LINKS
+ *****************************************************************************/
+a:link {
+	color: #696;
+	text-decoration: none;
+	background-color: transparent
+}
+
+a:visited {
+	color: #699;
+	text-decoration: none;
+	background-color: transparent
+}
+
+a:hover {
+	color: #c93;
+	text-decoration: underline;
+	background-color: transparent
+}
+
+a:active {
+	color: #900;
+	text-decoration: underline;
+	background-color: transparent
+}
+
+/*****************************************************************************
+ * ALIGNMENT AND JUSTIFICATION
+ *****************************************************************************/
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.vbottom {
+	vertical-align: bottom;
+}

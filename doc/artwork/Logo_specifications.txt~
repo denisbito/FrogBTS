@@ -1,0 +1,23 @@
+SPECIFICATIONS FOR THE FROG BTS LOGO
+===============================================================================
+
+1. Start with a 300x46 pixel image (300 pixel width, 46 pixel height), with an
+opaque (for now) background (suggested color: #506a3e).
+
+
+2. Create a new layer, and on it draw a perfect circle, with a diameter of 36
+pixels, from coordinates (x,y) = (5,5) to (x,y) = (41,41), and fill it with
+the color white. Using the GIMP - the GNU image manipulation program - the
+process is described below:
+
+2.1. Use the ellipse selection tool to draw the circle. Tool specifications:
+- Antialiasing;
+- Feather edges, with radius of 1.0.
+2.2. Use the pencil tool (with a thick brush - circle (11), perhaps) to fill in
+the selection with white. Stroke only once (click the mouse once and hold it
+down) and drag over the selection, including the borders, to paint uniformly.
+
+
+3. Still in the same layer as the previous circle, draw a new circle, with a
+diameter of 34 pixels, from coordinates (x,y) = (7,7) to (x,y) (the process is
+analogous to the one described in the last item).

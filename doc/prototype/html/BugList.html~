@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>FrogBTS</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+
+	<!-- LIXO SCRAP LIXO SCRAP LIXO SCRAP LIXO SCRAP -->
+	<style type="text/css">
+		div {
+			border: 1px solid #bfbfbf;
+			background-color: #eeeeee;
+		}
+	</style>
+</head>
+
+<body>
+<div id="rootDiv">
+
+<div id="headerBar">
+	<div id="topMenuDiv">
+		<a href="">logout</a>
+	</div>
+	<div id="topInfoDiv" style="text-align: right;">
+		<img src="img/frog_logo_001.png" style="position: relative; vertical-align: bottom; float: left; border: 1px solid #000000" />
+
+		<p style="border: 1px solid #000000; bottom: 0px;">
+		Bem-vindo, Denis Oliveira <br/>
+		<strong>administrador</strong>
+		</p>
+	</div>
+</div>
+
+<div id="menuBar">
+	MENU AQUI
+</div>
+
+<div id="contentBar">
+	CONTEÚDO AQUI
+</div>
+
+<div id="footerBar">
+	Rodapé
+</div>
+
+</div>
+</body>
+</html>

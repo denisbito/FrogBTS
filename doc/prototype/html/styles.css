@@ -1,0 +1,210 @@
+/*****************************************************************************
+ * GLOBAL STYLES
+ *****************************************************************************/
+body {
+	margin: 0;
+	padding: .5em;
+}
+
+body, table {
+	font-family: "DejaVu Sans", "Bitstream Vera Sans", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	font-size: 12px;
+}
+
+table {
+	background-color: #E0E0E0;
+}
+th, td {
+	background-color: #FFFFFF;
+	padding: .2em;
+}
+
+/*****************************************************************************
+ * STRUCTURAL LAYOUT DIVS
+ *****************************************************************************/
+#rootDiv {
+	width: 100%;
+	margin: 0px auto;
+}
+
+#headerBar {
+	color: #FFFFFF;
+}
+
+#topMenuDiv {
+	border-top: 2px solid #506A3E;
+	padding: .2em .4em .4em .4em;
+	text-align: right;
+}
+
+#topInfoDiv {
+	background-color: #506A3E; /* #506A3E, #5C7312, #6E6E14 */
+	height: 65px;
+	padding: .2em;
+}
+
+#logoDiv {
+	float: left;
+	width: 30%;
+}
+
+#loginInfoDiv {
+}
+
+#menuBar {
+	padding: .2em;
+	background-color: #E5E5E5;
+	text-align: right;
+}
+
+#projectSelectBar {
+	padding: .2em;
+	text-align: right;
+}
+
+#contentBar {
+	margin: 1em;
+	overflow: hidden; /* contains the floating child divs */
+	padding: 1em 0;
+}
+
+#sideOptionsDiv {
+	background-color: #F5F5F5;
+	border-left: 1px solid #999999;
+	font-size: 90%;
+	float: right;
+	padding: .2em 1em 4em 1.5em;
+	width: 25%;
+}
+
+#contentDiv {
+	float: left;
+	width: 67%;
+	max-width: 67%;
+}
+
+#footerBar {
+	border-top: 1px solid #CECECE;
+	clear: both;
+	color: #666666;
+	font-size: 90%;
+}
+
+
+/*****************************************************************************
+ * MAIN MENU ITEMS
+ *****************************************************************************/
+.mainMenu {
+	display: inline;
+	margin: 0px;
+	padding: 0 20px;
+	vertical-align: middle;
+}
+
+.mainMenu li {
+	display: inline;
+	list-style-type: none;
+	padding: 0 .4em;
+}
+
+
+/*****************************************************************************
+ * FORMS & FORM ELEMENTS
+ *****************************************************************************/
+form {
+	margin: 0;
+	padding: 0;
+}
+
+form div {
+	padding: .1em 0;
+	white-space: nowrap;
+}
+
+fieldset {
+	border: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+button, input, label, select {
+	vertical-align: middle;
+}
+
+input, select {
+	font-family: monospace;
+}
+
+.formButton {
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 0 .5em;
+}
+
+/*****************************************************************************
+ * LINKS
+ *****************************************************************************/
+a:link {
+	color: #0000FF;
+}
+
+a:visited {
+	color: #0000FF;
+}
+
+a:hover {
+	color: #809F19;
+}
+
+a:active {
+	color: #990000;
+}
+
+#topMenuDiv a:link,
+#topMenuDiv a:visited {
+	color: #506A3E;
+	text-decoration: none;
+	border-bottom: 1px dotted #506A3E;
+}
+#topMenuDiv a:hover {
+	background-color: #FFFFCC;
+}
+
+.mainMenu a:link,
+.mainMenu a:visited {
+	color: #506A3E;
+	font-weight: bold;
+}
+.mainMenu a:hover {
+	color: #FFFFCC;
+}
+
+/*****************************************************************************
+ * LISTS
+ *****************************************************************************/
+ul.colorCode {
+}
+ul.colorCode li {
+	display: inline;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*****************************************************************************
+ * ALIGNMENT AND JUSTIFICATION
+ *****************************************************************************/
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.vbottom {
+	vertical-align: bottom;
+}
