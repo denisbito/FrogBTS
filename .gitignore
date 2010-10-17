@@ -1,5 +1,7 @@
 frogbts/target/
-
+frogbts/.classpath
+frogbts/.project
+frogbts/.settings/
 
 # Compiled source #
 ###################
