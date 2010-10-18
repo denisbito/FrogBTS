@@ -1,13 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.org.universa.frogbts</groupId>
 	<artifactId>frogbts</artifactId>
 	<packaging>war</packaging>
 	<version>0.1</version>
+
 	<!-- TODO project name  -->
-	<name>quickstart</name>
-	<description></description>
+	<name>frogbts</name>
+	<description>Frog Bug Tracking System</description>
 	<!--
 		TODO <organization> <name>company name</name> <url>company url</url>
 		</organization>
@@ -19,6 +21,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
@@ -72,6 +75,7 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<resources>
 			<resource>
@@ -116,6 +120,7 @@
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
+				<version>6.1.25</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
