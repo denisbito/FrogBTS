@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>FrogBTS</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+	<!-- TEMPORARY STYLES -->
+	<style type="text/css">
+		.bgNovo, .bgNovo td{
+			background-color: #FFFFDD
+		}
+
+		.bgAberto, .bgAberto td {
+			background-color: #FFE5E0
+		}
+
+		.bgPendente, .bgPendente td {
+			background-color: #FFE0F0
+		}
+
+		.bgAtribuido, .bgAtribuido td {
+			background-color: #E0F0FF
+		}
+
+		.bgResolvido, .bgResolvido td {
+			background-color: #F0FFF0
+		}
+
+		.bgFechado, .bgFechado td {
+			background-color: #EEEEEE
+		}
+	</style>
+</head>
+
+<body>
+<div id="rootDiv">
+
+<div id="headerBar">
+	<div id="topMenuDiv">
+		<a href="">logout</a>
+	</div>
+	<div id="topInfoDiv">
+		<div id="logoDiv">
+			<img src="img/frog_logo_001.png" alt="Frog bug tracking system" />
+		</div>
+
+		<div id="loginInfoDiv">
+			Bem-vindo, Denis Oliveira <br/>
+			<strong>administrador</strong>
+		</div>
+	</div>
+</div>
+
+<div id="menuBar">
+	<ul class="mainMenu">
+		<li><a href="">Home</a></li>
+		<li><a href="" wicket:id="link_bugnew">Novo bug</a></li>
+		<li><a href="">Pesquisar</a></li>
+		<li><a href="">Changelog</a></li>
+		<li><a href="">Relat&oacute;rios</a></li>
+		<li><a href="">Admin</a></li>
+	</ul>
+
+	<form action="" method="post" style="display: inline">
+		<fieldset>
+			<label for="bugId">bug # </label>
+			<input type="text" name="bugId" id="bugId" />
+			<input class="formButton" type="submit" value="Ir" />
+		</fieldset>
+	</form>
+</div>
+
+<div id="projectSelectBar">
+	<form action="" method="post" style="display: inline">
+		<fieldset>
+			<label for="projectId">Projeto:</label>
+			<select name="projectId" id="projectId">
+				<option>TODOS</option>
+				<option>Projeto de Teste</option>
+				<option>Frog Demo</option>
+				<option>Projeto ABC</option>
+			</select>
+		</fieldset>
+	</form>
+</div>
+
+<div id="contentBar">
+	<div id="sideOptionsDiv">
+		<span><strong>Op&ccedil;&otilde;es de pesquisa</strong></span>
+		<br />
+		<br />
+
+		<form action="" method="post">
+			<fieldset>
+				<div>
+					<label for="keyword">Palavra-chave:</label>
+					<input type="text" name="keyword" id="keyword" size="15" />
+				</div>
+
+				<div>
+					<label for="statusId">Status:</label>
+					<select name="statusId" id="statusId">
+						<option>QUALQUER</option>
+						<option>novo</option>
+						<option>aberto</option>
+						<option>pendente</option>
+						<option>atribu&iacute;do</option>
+						<option>resolvido</option>
+						<option>fechado</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="priorityId">Prioridade:</label>
+					<select name="priorityId" id="priorityId">
+						<option>QUALQUER</option>
+						<option>alta</option>
+						<option>m&eacute;dia</option>
+						<option>baixa</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="dateStart">Atualizado de:</label>
+					<input type="text" name="dateStart" id="dateStart" size="15" />
+				</div>
+
+				<div>
+					<label for="dateEnd">at&eacute;:</label>
+					<input type="text" name="dateEnd" id="dateEnd" size="15" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="contentDiv">
+		<table>
+		    <tr>
+		        <th>ID</th>
+		        <th>descricao</th>
+		        <th>status</th>
+		        <th>prioridade</th>
+		        <th>atualizado</th>
+		    </tr>
+
+		    <tr class="bgNovo">
+		        <td><a href="">000016</a></td>
+		        <td>n&atilde;o existe forma de agrupar itens relacionados</td>
+		        <td>novo</td>
+		        <td>alta</td>
+		        <td>12/05/2008</td>
+		    </tr>
+
+		    <tr class="bgAtribuido">
+		        <td><a href="">000020</a></td>
+		        <td>itens fechados est&atilde;o podendo ser reabertos por desenvolvedor</td>
+		        <td>atribu&iacute;do</td>
+		        <td>m&eacute;dia</td>
+		        <td>14/05/2008</td>
+		    </tr>
+
+		    <tr class="bgAberto">
+		        <td><a href="">000021</a></td>
+		        <td>envio de emails n&atilde;o est&aacute; funcionando corretamente</td>
+		        <td>aberto</td>
+		        <td>alta</td>
+		        <td>14/05/2008</td>
+		    </tr>
+
+		    <tr class="bgResolvido">
+		        <td><a href="">000023</a></td>
+		        <td>erro ao anexar arquivo maior do que 5 MB</td>
+		        <td>resolvido</td>
+		        <td>baixa</td>
+		        <td>14/05/2008</td>
+		    </tr>
+
+		    <tr class="bgAberto">
+		        <td><a href="">000027</a></td>
+		        <td>emails de notifica&ccedil;&atilde;o est&atilde;o sendo enviados para pessoas fora do projeto</td>
+		        <td>aberto</td>
+		        <td>alta</td>
+		        <td>15/05/2008</td>
+		    </tr>
+
+		    <tr class="bgFechado">
+		        <td><a href="">000032</a></td>
+		        <td>itens duplicados continuam abertos quando o item original &eacute; fechado</td>
+		        <td>fechado</td>
+		        <td>alta</td>
+		        <td>15/05/2008</td>
+		    </tr>
+		</table>
+		<br />
+
+		<div class="center">
+			<ul class="colorCode">
+				<li class="bgNovo">novo</li>
+				<li class="bgAberto">aberto</li>
+				<li class="bgPendente">pendente</li>
+				<li class="bgAtribuido">atribu&iacute;do</li>
+				<li class="bgResolvido">resolvido</li>
+				<li class="bgFechado">fechado</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="footerBar">
+	<strong>16</strong> queries executed <br />
+
+	<br />
+	Frog Bug Tracking System <br />
+	Copyright @ Frog BTS 2008<br />
+	Este produto respeita padr&otilde;es Web:
+		<a href="http://validator.w3.org/check/referer">XHTML 1.0 Strict</a>,
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+</div>
+
+</div>
+</body>
+</html>
