@@ -10,6 +10,7 @@ import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.PropertyModel;
 
+import br.org.universa.frogbts.dao.BugDao;
 import br.org.universa.frogbts.entity.Bug;
 
 /**
@@ -54,7 +55,9 @@ public class CadastroFrogbtsPage<Prioridade> extends WebPage {
 				this, "bug.descricao")));
 		form.add(new Button("btnGravar") {
 			public void onSubmit() {
-				System.out.println(bug);
+				System.out.println(bug.getChave());
+				BugDao bugDao = new BugDao();
+				bugDao.inserirBug(bug);
 				setResponsePage(CadastroFrogbtsRespostaPage.class);
 			};
 		});

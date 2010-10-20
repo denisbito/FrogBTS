@@ -1,15 +1,25 @@
 package br.org.universa.frogbts.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Bug {
+public class Bug implements Serializable{
 
+	private Long id;
 	private String chave;
 	private String status;
 	private String prioridade;
 	private String descricao;
 	private Date dataCriacao;
 	private Date dataUltimaModificacao;
+
+	public Bug(Long id2) {
+		this.id = id2;
+	}
+
+	public Bug() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getChave() {
 		return chave;
@@ -57,6 +67,14 @@ public class Bug {
 
 	public void setDataUltimaModificacao(Date dataUltimaModificacao) {
 		this.dataUltimaModificacao = dataUltimaModificacao;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 }
