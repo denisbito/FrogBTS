@@ -58,7 +58,8 @@ public class CadastroFrogbtsPage<Prioridade> extends WebPage {
 				System.out.println(bug.getChave());
 				BugDao bugDao = new BugDao();
 				bugDao.inserirBug(bug);
-				setResponsePage(CadastroFrogbtsRespostaPage.class);
+				info("Bug inserido.");
+				setResponsePage(new BugListPage());
 			};
 		});
 	}

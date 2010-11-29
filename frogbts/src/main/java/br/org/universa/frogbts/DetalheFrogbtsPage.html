@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>FrogBTS</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+	<!-- TEMPORARY STYLES -->
+	<style type="text/css">
+		.bgNovo, .bgNovo td{
+			background-color: #FFFFDD
+		}
+
+		.bgAberto, .bgAberto td {
+			background-color: #FFE5E0
+		}
+
+		.bgPendente, .bgPendente td {
+			background-color: #FFE0F0
+		}
+
+		.bgAtribuido, .bgAtribuido td {
+			background-color: #E0F0FF
+		}
+
+		.bgResolvido, .bgResolvido td {
+			background-color: #F0FFF0
+		}
+
+		.bgFechado, .bgFechado td {
+			background-color: #EEEEEE
+		}
+	</style>
+</head>
+
+<body>
+<div id="rootDiv">
+
+<div id="headerBar">
+	<div id="topInfoDiv">
+		<div id="logoDiv">
+			<img src="img/frog_logo_001.png" alt="Frog bug tracking system" />
+		</div>
+
+		<div id="loginInfoDiv">
+			Bem-vindo<br/>
+			<strong> </strong>
+		</div>
+	</div>
+</div>
+
+<div id="menuBar">
+	<ul class="mainMenu">
+		<li><a href="">Home</a></li>
+		<li><a href="">Novo item</a></li>
+		<li><a href="">Pesquisar</a></li>
+		<li><a href="">Changelog</a></li>
+		<li><a href="">Relat&oacute;rios</a></li>
+		<li><a href="">Admin</a></li>
+	</ul>
+</div>
+
+<div id="contentBar">
+	<div id="sideOptionsDiv">
+		<span><strong>Cadastro de Bugs</strong></span>
+		<br />
+		<br />
+
+		<form action="" method="post" wicket:id="form">
+			<fieldset>
+				<div>
+					<label for="keyword">Palavra-chave:</label>
+					<input type="text" name="keyword" id="keyword" size="20" wicket:id="chave"/>
+				</div>
+				
+				<div>
+					<label for="keyword">Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="text" name="keyword" id="keyword" size="10" wicket:id="status"/>
+				</div>
+				<div>
+					<label for="keyword">Prioridade:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="text" name="keyword" id="keyword" size="5" wicket:id="prioridade"/>
+				</div>
+
+				<!-- div>
+					<label for="statusId">Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<select name="statusId" id="statusId" wicket:id="status">
+						<option>novo</option>
+						<option>aberto</option>
+						<option>pendente</option>
+						<option>atribuido</option>
+						<option>resolvido</option>
+						<option>fechado</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="priorityId">Prioridade:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					
+					<select name="priorityId" id="priorityId" wicket:id="prioridade">
+						<option>alta</option>
+						<option>media</option>
+						<option>baixa</option>
+					</select>
+				</div-->
+
+				<div>
+					<label for="dateStart">Descricao:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input type="text" name="dateStart" id="dateStart" size="50" wicket:id="descricao"/>
+				</div>
+				<input wicket:id="btnGravar" class="formButton" type="submit" value="Gravar" />
+			</fieldset>
+		</form>
+	</div>
+
+</div>
+
+<div id="footerBar">
+
+	<br />
+	Frog Bug Tracking System <br />
+	Copyright @ Frog BTS 2010<br />
+	Este produto respeita padr&otilde;es Web:
+		<a href="http://validator.w3.org/check/referer">XHTML 1.0 Strict</a>,
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+</div>
+
+</div>
+</body>
+</html>
